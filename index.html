@@ -37,7 +37,12 @@
             width: 100%;
             height: 100%;
             overflow: auto;
+            transition: 0.4s;
         }
+        #main.menu-open {
+            left: -180px;
+        }
+
 
         #show {
             float:right;
@@ -62,6 +67,27 @@
         <p>Hello worldHello worldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello world</p>
 
     </div>
+
+    <script>
+        (function() {
+            'use strict'
+
+        var show = document.getElementById('show');
+        var main = document.getElementById('main');
+
+        show.addEventListener('click',function(){
+        //     if (main.className === 'menu-open') {
+        //         main.className = '';
+        //     }else {
+        //         main.className ='menu-open';
+        //     }
+        // });
+
+        main.className = main.className === 'menu-open' ? '' : 'menu-open';
+        });
+
+        })();
+    </script>
     
 </body>
 </html>
