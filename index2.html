@@ -19,6 +19,18 @@
                 height: 100%;
                 overflow-x:hidden;
             }
+
+            #cover {
+                background: #000;
+                opacity: 0.6;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top:0;
+                left: 0;
+                z-index: 1;
+                display: none;
+            }
     
             #menu {
                 position: absolute;
@@ -30,6 +42,7 @@
                 box-sizing: border-box;
                 width: 180px;
                 min-height: 100%;
+                z-index: 2;
             }
     
     
@@ -37,12 +50,31 @@
                 float:right;
                 cursor: pointer;
             }
+            body.menu-open{
+                overflow-y: hidden;
+            }
+
+
+            body.menu-open #cover{
+                display: block;
+            }
+
+            body.menu-open #menu {
+                right: 0;
+            }
+
         </style>
 </head>
-<body>
+<body class="menu-open">
 
         <i class="fa fa-bars" id="show"></i>
         <h1>Hello</h1>
+        <p>Hello worldHello worldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello world</p>
+
+        <p>Hello worldHello worldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello world</p>
+
+        <p>Hello worldHello worldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello world</p>
+
         <p>Hello worldHello worldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello worldworldHello worldHello worldHello worldHello world</p>
 
         <div id="cover">
