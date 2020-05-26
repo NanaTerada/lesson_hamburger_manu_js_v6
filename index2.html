@@ -43,6 +43,7 @@
                 width: 180px;
                 min-height: 100%;
                 z-index: 2;
+                transition: 0.4s;
             }
     
     
@@ -65,7 +66,7 @@
 
         </style>
 </head>
-<body class="menu-open">
+<body>
 
         <i class="fa fa-bars" id="show"></i>
         <h1>Hello</h1>
@@ -91,6 +92,35 @@
                     <li>MUNU</li>
                 </ul>
             </div>
+
+
+            <script>
+                    (function() {
+                        'use strict'
+            
+                    var show = document.getElementById('show');
+                    var hide = document.getElementById('hide');
+            
+                    show.addEventListener('click',function(){
+                    //     if (main.className === 'menu-open') {
+                    //         main.className = '';
+                    //     }else {
+                    //         main.className ='menu-open';
+                    //     }
+                    // });
+
+                    document.body.className ='menu-open';
+
+                });
+
+                    hide.addEventListener('click', function() {
+                        document.body.className ='';
+
+                    });
+        
+            
+                    })();
+                </script>
 
     
 </body>
